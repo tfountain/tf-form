@@ -1,6 +1,15 @@
 Tf-form
 =======
 
-This module extends the default Zend Form view helpers (currently just `formRow`) in order to provide some better (easier to style with CSS) out-of-the box HTML markup.
+This module extends the default Zend Form view helpers (currently just `formRow`) in order to provide some easier to style markup out of the box.
 
-Each form element is wrapped with a div which has the class `form-row` for general form styling, plus a class for the element type (e.g. `form-row-checkbox`). It also adds an id based on the form element id but with `-row`.
+Each form element is wrapped with a div. This div has the class `form-row` for general form styling, plus a class based on the element type (e.g. `form-row-checkbox`). It also has an id based on the form element id but with `-row` appende.
+
+Example:
+
+    <div id="name-row" class="form-row form-row-text">
+        <label>
+            <span>Name</span>
+            <input type="text" name="name" value="">
+        </label>
+    </div>

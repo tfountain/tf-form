@@ -25,13 +25,13 @@ class ConfigProvider
     {
         return [
             'aliases' => [
-                'formrow'  => View\Helper\FormRow::class,
-                'form_row' => View\Helper\FormRow::class,
-                'formRow'  => View\Helper\FormRow::class,
-                'FormRow'  => View\Helper\FormRow::class,
+                'formrow'  => Form\View\Helper\FormRow::class,
+                'form_row' => Form\View\Helper\FormRow::class,
+                'formRow'  => Form\View\Helper\FormRow::class,
+                'FormRow'  => Form\View\Helper\FormRow::class,
             ],
             'invokables' => [
-                View\Helper\FormRow::class => View\Helper\FormRow::class,
+                Form\View\Helper\FormRow::class => Form\View\Helper\FormRow::class,
             ],
         ];
     }
