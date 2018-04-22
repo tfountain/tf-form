@@ -3,12 +3,9 @@
     "description": "Better default markup for ZF's form helpers",
     "license": "BSD-3-Clause",
     "autoload": {
-        "psr-0": {
-            "TfForm": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+        "psr-4": {
+            "TfForm\\": "src/"
+        }
     },
     "authors": [{
         "name": "Tim Fountain",
@@ -17,6 +14,6 @@
         "role": "developer"
     }],
     "require": {
-        "php": ">=5.3.3"
+        "php": "^5.6 || ^7.0"
     }
 }

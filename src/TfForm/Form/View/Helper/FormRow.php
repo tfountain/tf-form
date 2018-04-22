@@ -11,10 +11,11 @@ class FormRow extends ZfFormRow
      * Utility form helper that renders a label (if it exists), an element and errors
      *
      * @param  ElementInterface $element
+     * @param  null|string      $labelPosition
      * @throws \Zend\Form\Exception\DomainException
      * @return string
      */
-    public function render(ElementInterface $element)
+    public function render(ElementInterface $element, $labelPosition = null)
     {
         $elementType = substr(get_class($element), strrpos(get_class($element), '\\') + 1);
         $elementTypeClass = 'form-row-'.strtolower($elementType);
