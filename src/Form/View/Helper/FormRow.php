@@ -24,6 +24,9 @@ class FormRow extends ZfFormRow
 
         $html = '<div id="'.$elementRowId.'" class="form-row '.$elementTypeClass.'">';
         $html .= parent::render($element);
+        if ($element->getOption('description')) {
+            $html .= '<p class="description">'.$element->getOption('description').'</p>';
+        }
         $html .= '</div>';
 
         return $html;
