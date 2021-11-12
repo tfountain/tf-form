@@ -1,6 +1,6 @@
 {
     "name": "tfountain/tf-form",
-    "description": "Better default markup for ZF's form helpers",
+    "description": "Better default markup for Laminas' form helpers",
     "license": "BSD-3-Clause",
     "autoload": {
         "psr-4": {
@@ -12,8 +12,5 @@
         "email": "tim@tfountain.co.uk",
         "homepage": "http://tfountain.co.uk/",
         "role": "developer"
-    }],
-    "require": {
-        "php": "^5.6 || ^7.0"
-    }
+    }]
 }
